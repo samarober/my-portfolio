@@ -3,8 +3,8 @@ export const profile = {
   role: "Estudiante de Desarrollo de Aplicaciones Web",
   shortBio:
     "Construyendo proyectos reales mientras aprendo. Interesado en el desarrollo fullstack, la arquitectura de software y la cultura open source.",
-  github: "https://github.com/samarober",
-  email: "samarober12@gmail.com",
+  github: "https://github.com/TU_USUARIO",
+  email: "tu@email.com",
 };
 
 export const projects = [
@@ -14,7 +14,7 @@ export const projects = [
     description:
       "Arquitectura completa de un punto de venta: frontend React, API REST en Java y base de datos PostgreSQL. Todo el entorno containerizado con Docker para garantizar despliegues reproducibles.",
     tags: ["React", "Java", "PostgreSQL", "Docker"],
-    github: "https://github.com/samarober/tfg-tpv-daw",
+    github: "https://github.com/TU_USUARIO/sistema-tpv",
     demo: null,
     status: "En desarrollo",
     featured: true,
@@ -30,4 +30,10 @@ export const projects = [
     status: "Publicado",
     featured: false,
   },
+];
+
+export const techStack = [
+  { category: "Backend & Base de Datos", items: ["Java", "PostgreSQL", "SQL"] },
+  { category: "Infraestructura & Herramientas", items: ["Docker", "Git", "GitHub"] },
+  { category: "Frontend", items: ["React", "JavaScript", "Tailwind CSS"] }
 ];
