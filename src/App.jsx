@@ -1,4 +1,5 @@
 import { profile, projects } from './data/portfolioData'
+import ProjectCard from './components/ProjectCard'
 
 export default function App() {
   return (
@@ -20,20 +21,14 @@ export default function App() {
         </p>
       </header>
 
-      {/* Sección de proyectos — ProjectCard llega en Fase 3 */}
+      {/* Sección de proyectos */}
       <section>
         <h2 className="text-xs font-mono text-gray-600 uppercase tracking-widest mb-8">
           // proyectos
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {projects.map((project) => (
-            <div
-              key={project.id}
-              className="border border-gray-800 rounded-xl p-5 text-gray-400"
-            >
-              <p className="text-white font-semibold mb-1">{project.title}</p>
-              <p className="text-sm">{project.description}</p>
-            </div>
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </section>
